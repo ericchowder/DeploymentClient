@@ -9,6 +9,7 @@ function App() {
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(()=>{
+    console.log("ENV IS: " + process.env.NODE_ENV)
     axios.get(`${config.url.API_URL}/flask/hello`).then(response => {
     //axios.get('http://localhost:5000/flask/hello').then(response => {
       console.log("SUCCESS", response)
