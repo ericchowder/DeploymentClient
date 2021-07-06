@@ -10,8 +10,8 @@ const prod = {
   }
 };
 
-console.log("before export NODE_ENV: ", process.env.NODE_ENV)
+console.log("before export MY_ENV: ", process.env.MY_ENV)
 
-export const config = process.env.NODE_ENV === 'development' ? prod : dev;
+export const config = process.env.MY_ENV === 'development' ? dev : prod;
 
-console.log("after export NODE_ENV: ", process.env.NODE_ENV)
+console.log("after export MY_ENV: ", process.env.MY_ENV)
