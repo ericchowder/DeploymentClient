@@ -1,5 +1,4 @@
 
-process.env.NODE_ENV = 'production'
 const prod = {
   url: {
     API_URL: 'https://flask-saas-api.herokuapp.com',
@@ -13,6 +12,6 @@ const prod = {
 
 console.log("before export NODE_ENV: ", process.env.NODE_ENV)
 
-export const config = process.env.NODE_ENV === 'development' ? dev : prod;
+export const config = process.env.NODE_ENV === 'development' ? prod : dev;
 
 console.log("after export NODE_ENV: ", process.env.NODE_ENV)
