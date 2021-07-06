@@ -1,6 +1,6 @@
 const prod = {
   url: {
-    API_URL: 'https://flask-saas-client.herokuapp.com',
+    API_URL: 'https://flask-saas-api.herokuapp.com',
     API_URL_USERS: 'hhttps://flask-saas-client.herokuapp.com/flask/hello'}
   };
   const dev = {
