@@ -9,6 +9,7 @@ function App() {
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(()=>{
+    process.env.NODE_ENV = 'production'
     console.log("ENV IS: " + process.env.NODE_ENV)
     axios.get(`${config.url.API_URL}/flask/hello`).then(response => {
     //axios.get(`https://flask-saas-api.herokuapp.com/flask/hello`).then(response => {

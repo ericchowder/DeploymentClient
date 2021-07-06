@@ -1,3 +1,5 @@
+
+process.env.NODE_ENV = 'production'
 const prod = {
   url: {
     API_URL: 'https://flask-saas-api.herokuapp.com',
